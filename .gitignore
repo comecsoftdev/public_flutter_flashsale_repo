@@ -1,12 +1,15 @@
 # confidential files shouldn't be uploaded to github
 .misc/
+.misc
 .private/
+.private
 *strings.xml
 *.keystore
 *google-services.json
 *proguard-rules.pro
 *key.properties
 assets/images/
+assets/images
 
 
 # Miscellaneous
