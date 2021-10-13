@@ -22,58 +22,60 @@ extension FSSearchPageUIFunctions on FSSearchPageState {
     return Container(
       height: 60.h,
       color: AppColor.color101,
-      padding: EdgeInsets.fromLTRB(10.w, 10.h, 20.w, 0),
+      padding: EdgeInsets.fromLTRB(10.w, 0.h, 20.w, 0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children:[
           // [ Please enter your search word ]
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children:[
-              InkWell(
-                onTap: () => Navigator.pop(context),
-                child: Container(
-                  margin: EdgeInsets.all(10.r),
-                  width: 24.r,
-                  height: 24.r,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("assets/images/icon/arrow_left_b.png"),
-                      fit: BoxFit.cover,
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children:[
+                InkWell(
+                  onTap: () => Navigator.pop(context),
+                  child: Container(
+                    margin: EdgeInsets.all(10.r),
+                    width: 24.r,
+                    height: 24.r,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/images/icon/arrow_left_b.png"),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              SizedBox(width: 15.w),
-              Container(
-                width: 271.w,
-                child: TextField(
-                  textInputAction: TextInputAction.search,
-                  controller: _searchFieldController,
-                  maxLength: 10,
-                  cursorColor: AppColor.color201,
-                  decoration: InputDecoration(
-                      hintText: _s!.searchEnterSearchWord,
-                      hintStyle: TextStyle(
-                          color: AppColor.color1020,
-                          fontSize: 16.sp
-                      ),
-                      counterText: "",
-                      focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: AppColor.color101),
-                      ),
-                      enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: AppColor.color101),
-                      ),
-                      contentPadding: EdgeInsets.symmetric(horizontal: 0.w, vertical: 0)),
-                  onChanged: (value) => _searchOnChange.add(value),
+                SizedBox(width: 15.w),
+                Container(
+                  width: 271.w,
+                  child: TextField(
+                    textInputAction: TextInputAction.search,
+                    controller: _searchFieldController,
+                    maxLength: 10,
+                    cursorColor: AppColor.color201,
+                    decoration: InputDecoration(
+                        hintText: _s!.searchEnterSearchWord,
+                        hintStyle: TextStyle(
+                            color: AppColor.color1020,
+                            fontSize: 16.sp
+                        ),
+                        counterText: "",
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: AppColor.color101),
+                        ),
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: AppColor.color101),
+                        ),
+                        contentPadding: EdgeInsets.symmetric(horizontal: 0.w, vertical: 0)),
+                    onChanged: (value) => _searchOnChange.add(value),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-          Spacer(),
+          //Spacer(),
           FSDivider(),
         ],
       ),
