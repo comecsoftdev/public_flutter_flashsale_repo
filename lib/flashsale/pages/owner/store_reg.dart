@@ -89,9 +89,12 @@ class FSStoreRegPageState extends State<FSStoreRegPage> {
             if (state is FSStoreRegUpdateStoreSuccess){
               logger.d('${this.runtimeType} FSStoreRegUpdateStoreSuccess');
 
+              _progressHUDKey.currentState!.dismiss();
               _storeRegUpdated(state.userInfo, state.store, state.storeOwner, state.registration);
             }else if (state is FSStoreRegUpdateStoreFailure){
               logger.d('${this.runtimeType} FSStoreRegisterStoreFailure');
+
+              _progressHUDKey.currentState!.dismiss();
               showAlertDialog(context,
                 _s!.commonNetworkError,
                 state.comment,

@@ -212,6 +212,9 @@ extension FSStoreRegPageEventFunctions on FSStoreRegPageState {
     if(event is FSStoreRegUpdateStore) _regUpdateStore(event.storeId, event.owner, event.store, event.registrationId, event.filePath);
   }
 
-  void _regUpdateStore(storeId, owner, store, regId, path) => BlocProvider.of<FSStoreRegBloc>(context).add(FSStoreRegUpdateStore(token: getSSOToken(context)!,
-      storeId: storeId, owner: owner, store: store, registrationId: regId, filePath: path));
+  void _regUpdateStore(storeId, owner, store, regId, path){
+    _progressHUDKey.currentState!.show();
+    BlocProvider.of<FSStoreRegBloc>(context).add(FSStoreRegUpdateStore(token: getSSOToken(context)!,
+        storeId: storeId, owner: owner, store: store, registrationId: regId, filePath: path));
+  }
 }
