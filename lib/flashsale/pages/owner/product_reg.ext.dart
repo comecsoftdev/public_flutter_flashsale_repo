@@ -103,6 +103,7 @@ extension FSProductRegPagePrivatePublicFunctions on FSProductRegPageState {
       if(_product.id == null){
         // register new product
         _regUpdateProduct(filePath, product.toJson()..putIfAbsent('store_id', () => _store.id));
+        _progressHUDKey.currentState!.show();
       }else{
         if(_product == product && filePath == null){
           // no image and product info change in update mode
@@ -111,6 +112,7 @@ extension FSProductRegPagePrivatePublicFunctions on FSProductRegPageState {
           // only change in product info
           _regUpdateProduct(null, product.toJson()..putIfAbsent('store_id', () => _store.id));
         }else{
+          _progressHUDKey.currentState!.show();
           _regUpdateProduct(filePath, product.toJson()..putIfAbsent('store_id', () => _store.id));
         }
       }

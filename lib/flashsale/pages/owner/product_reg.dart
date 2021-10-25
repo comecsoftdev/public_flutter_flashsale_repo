@@ -72,8 +72,10 @@ class FSProductRegPageState extends State<FSProductRegPage> {
             if(state is FSProductRegUpdateProductSuccess) {
               logger.d('${this.runtimeType} FSProductRegisterProductSuccess');
               _productRegistered(state.product);
+              _progressHUDKey.currentState!.dismiss();
             }else if(state is FSProductRegUpdateProductFailure) {
               logger.d('${this.runtimeType} FSProductRegisterProductFailure');
+              _progressHUDKey.currentState!.dismiss();
               showAlertDialog(context,
                 _s!.commonNetworkError,
                 state.comment,
