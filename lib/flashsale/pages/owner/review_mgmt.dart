@@ -124,7 +124,9 @@ class FSReviewMgmtPageState extends State<FSReviewMgmtPage> with SingleTickerPro
               logger.d('${this.runtimeType} FSReviewMgmtUnRegisterReviewSuccess');
 
               // increase unAnsweredReviewCount
-              _store.unAnsweredReviewCount = _store.unAnsweredReviewCount! + 1;
+              if (_store.unAnsweredReviewCount != null){
+                _store.unAnsweredReviewCount = _store.unAnsweredReviewCount! + 1;
+              }
 
               // remove manager's response
               Review parent = _reviewInfo!.reviews!.firstWhere((element) => element.children?[0].id == state.reviewId);

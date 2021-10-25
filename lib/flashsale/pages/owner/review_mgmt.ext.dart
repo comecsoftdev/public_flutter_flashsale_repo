@@ -151,7 +151,9 @@ extension FSReviewMgmtPagePrivatePublicFunctions on FSReviewMgmtPageState {
         if(value != null && value is Map<String, dynamic>){
           if (value['review'] != null && value['review'].parent != null){
             // decrease unAnsweredReviewCount
-            _store.unAnsweredReviewCount = _store.unAnsweredReviewCount! - 1;
+            if (_store.unAnsweredReviewCount != null && _store.unAnsweredReviewCount! > 0){
+              _store.unAnsweredReviewCount = _store.unAnsweredReviewCount! - 1;
+            }
 
             // add manager's response
             Review? parent = _reviewInfo?.reviews?.firstWhere((element) => element.id == value['review'].parent);
