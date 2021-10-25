@@ -275,9 +275,11 @@ class StoreInfoInputInputWidgetState extends State<StoreInfoInputWidget> {
                             };
                             Navigator.of(context).pushNamed('fswebview', arguments: arguments).then((onValue){
                               setState(() {
-                                _addressController.text = onValue as String;
-                                // address changed. _validateLocation should be called.
-                                _storeLoc = null;
+                                if (onValue != null){
+                                  _addressController.text = onValue as String;
+                                  // address changed. _validateLocation should be called.
+                                  _storeLoc = null;
+                                }
                               });
                             });
                           }
