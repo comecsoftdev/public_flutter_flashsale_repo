@@ -575,8 +575,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("관리자 전화번호"),
         "storeRegManagerPhoneDesc": MessageLookupByLibrary.simpleMessage(
             "1. \'번호인증\'을 눌러서 전화번호 인증을 받으세요\n2. 해당 정보는 사용자에게 공개되지 않습니다"),
-        "storeRegNotSupportedArea": MessageLookupByLibrary.simpleMessage(
-            "가게 위치가 현재 지원되지 않는 지역입니다\n차후에 지원하도록 하겠습니다"),
+        "storeRegNotSupportedArea":
+            MessageLookupByLibrary.simpleMessage("가게 위치가 현재 지원되지 않는 지역입니다"),
+        "storeRegNotSupportedAreaDesc": MessageLookupByLibrary.simpleMessage(
+            "지원되는 지역은 지도화면-좌측상단(현재위치 혹은 지역명)-직접위치선택하시면 보실수 있습니다\n지원지역은 추후에 추가될 예정입니다."),
         "storeRegNotVerifiedNumber":
             MessageLookupByLibrary.simpleMessage("인증받은 전화번호가 아닙니다"),
         "storeRegPhoneNumber": MessageLookupByLibrary.simpleMessage("전화번호"),

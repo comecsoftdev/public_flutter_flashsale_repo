@@ -500,7 +500,7 @@ class StoreInfoInputInputWidgetState extends State<StoreInfoInputWidget> {
       if(!find && kReleaseMode){
         showAlertDialog(context,
           _s!.storeRegNotSupportedArea,
-          null,
+          _s!.storeRegNotSupportedAreaDesc,
           yes: _s!.commonOK,
           yesOnPressed: () => Navigator.pop(context),
         );

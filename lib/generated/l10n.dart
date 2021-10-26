@@ -2440,11 +2440,21 @@ class S {
     );
   }
 
-  /// `가게 위치가 현재 지원되지 않는 지역입니다\n차후에 지원하도록 하겠습니다`
+  /// `가게 위치가 현재 지원되지 않는 지역입니다`
   String get storeRegNotSupportedArea {
     return Intl.message(
-      '가게 위치가 현재 지원되지 않는 지역입니다\n차후에 지원하도록 하겠습니다',
+      '가게 위치가 현재 지원되지 않는 지역입니다',
       name: 'storeRegNotSupportedArea',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `지원되는 지역은 지도화면-좌측상단(현재위치 혹은 지역명)-직접위치선택하시면 보실수 있습니다\n지원지역은 추후에 추가될 예정입니다.`
+  String get storeRegNotSupportedAreaDesc {
+    return Intl.message(
+      '지원되는 지역은 지도화면-좌측상단(현재위치 혹은 지역명)-직접위치선택하시면 보실수 있습니다\n지원지역은 추후에 추가될 예정입니다.',
+      name: 'storeRegNotSupportedAreaDesc',
       desc: '',
       args: [],
     );

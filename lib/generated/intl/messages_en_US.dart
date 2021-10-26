@@ -658,7 +658,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "storeRegManagerPhoneDesc": MessageLookupByLibrary.simpleMessage(
             "1. Press \'Verify Number\' to receive phone number verification\n2. The information will not be disclosed to users"),
         "storeRegNotSupportedArea": MessageLookupByLibrary.simpleMessage(
-            "Your store location is not currently supported\nI will apply later"),
+            "Store location is currently not supported"),
+        "storeRegNotSupportedAreaDesc": MessageLookupByLibrary.simpleMessage(
+            "Supported areas can be viewed by selecting the location on the map screen-top left (current location or area name)-directly.\nSupport areas will be added later"),
         "storeRegNotVerifiedNumber": MessageLookupByLibrary.simpleMessage(
             "This is not a verified phone number"),
         "storeRegPhoneNumber":
