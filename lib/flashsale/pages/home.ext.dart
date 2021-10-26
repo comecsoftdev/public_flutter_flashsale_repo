@@ -173,23 +173,23 @@ extension FSHomePageUIFunctions on FSHomePageState {
     if (FSAppState.of(context).userInfo?.storeOwner != null){
       widgetsInHome.add(
           Positioned(
-            top: 670.h,
-            left: 60.w,
+            bottom: 30.h,
+            left: 80.w,
             child: _storeManagement(),
           )
       );
 
       widgetsInHome.add(
           Positioned(
-            top: 670.h,
-            left: 200.w,
+            bottom: 30.h,
+            left: 210.w,
             child: _storeList(),
           )
       );
 
       widgetsInHome.add(
           Positioned(
-            top: 670.h,
+            bottom: 30.h,
             right: 20.w,
             child: _myLocation(),
           )
@@ -197,7 +197,7 @@ extension FSHomePageUIFunctions on FSHomePageState {
     }else{
       widgetsInHome.add(
         Positioned(
-          top: 670.h,
+          bottom: 30.h,
           left: 137.w,
           child: _storeList(),
         )
@@ -205,7 +205,7 @@ extension FSHomePageUIFunctions on FSHomePageState {
 
       widgetsInHome.add(
         Positioned(
-          top: 670.h,
+          bottom: 30.h,
           right: 20.w,
           child: _myLocation(),
         )
