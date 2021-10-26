@@ -76,7 +76,7 @@ void showAlertDialog(BuildContext context, String title, String? desc,
     overlayColor: AppColor.color202,
     titleStyle: TextStyle(
       color: AppColor.color1010,
-      fontSize: 22.sp,
+      fontSize: 20.sp,
       fontFamily: "SpoqaHanSansNeo",
       fontWeight: FontWeight.w700,
     ),
