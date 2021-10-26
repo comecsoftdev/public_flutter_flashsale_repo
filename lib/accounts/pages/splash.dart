@@ -73,6 +73,7 @@ class _SplashPageState extends State<SplashPage> {
     }
     else{
       print('debugMode');
+      //await DotEnv.load(fileName: '.private/prod/.env');
       await DotEnv.load(fileName: '.private/debug/.env');
     }
 

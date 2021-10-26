@@ -132,7 +132,7 @@ extension FSReviewMgmtPageUIFunctions on FSReviewMgmtPageState {
           // 10 reviews displayed by default
           // if user tap 'more review', 20, 40, 60, 80 ... reviews displayed.
           // Use base time for performance
-          if(_reviewInfo!.page == 1 && _reviewInfo!.reviews!.length == constants.defaultPageSize)
+          if(_reviewInfo!.page == 1 && _reviewInfo!.pageSize == constants.defaultPageSize)
             _getReviewsAndUnAnsweredReviews(_store.id, 1, constants.defaultMorePageSize, _reviewInfo!.base);
           else
             _getReviewsAndUnAnsweredReviews(_store.id, _reviewInfo!.page + 1, constants.defaultMorePageSize, _reviewInfo!.base);
