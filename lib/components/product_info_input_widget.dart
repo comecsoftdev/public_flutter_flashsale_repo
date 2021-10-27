@@ -85,7 +85,7 @@ class ProductInfoInputWidgetState extends State<ProductInfoInputWidget> {
                 counterText: "",
               ),
               maxLines: 1,
-              maxLength: 20,
+              maxLength: 13,
               onSaved: (String? value) => _product!.name = value,
               validator: _validateName,
             ),
