@@ -439,9 +439,11 @@ extension FSHomePageStreamingFunctions on FSHomePageState {
     if (_periodicUpdateStreamSubscription == null){
       // start periodic update stream
       if(flutter_foundation.kReleaseMode){
+        logger.d('${this.runtimeType} periodicUpdate every ${constants.PeriodicUpdateTime}min');
         _periodicUpdateStreamSubscription = Stream.periodic(const Duration(minutes: constants.PeriodicUpdateTime))
             .listen((count) => _sendPeriodicUpdate(FSAppState.of(context).lastLatLng, FSAppState.of(context).searchingRule!));
       }else{
+        logger.d('${this.runtimeType} periodicUpdate every 10sec');
         _periodicUpdateStreamSubscription = Stream.periodic(const Duration(seconds: 10))
             .listen((count) => _sendPeriodicUpdate(FSAppState.of(context).lastLatLng, FSAppState.of(context).searchingRule!));
       }
