@@ -1260,20 +1260,20 @@ class S {
     );
   }
 
-  /// `서비스 제공 시간은\n{name1}시부터 {name2}시까지입니다.\n향후 늘리도록 하겠습니다.`
+  /// `현재 가게 게시시간은\n{name1}시부터 {name2}시까지입니다.\n향후 늘리도록 하겠습니다.`
   String homeServiceTimeWarning(Object name1, Object name2) {
     return Intl.message(
-      '서비스 제공 시간은\n$name1시부터 $name2시까지입니다.\n향후 늘리도록 하겠습니다.',
+      '현재 가게 게시시간은\n$name1시부터 $name2시까지입니다.\n향후 늘리도록 하겠습니다.',
       name: 'homeServiceTimeWarning',
       desc: '',
       args: [name1, name2],
     );
   }
 
-  /// `서비스 제공 시간은 {name1}시까지입니다.\n향후 늘리도록 하겠습니다.`
+  /// `현재 가게 게시시간은 {name1}시까지입니다.\n향후 늘리도록 하겠습니다.`
   String homeServiceEndTimeWarning(Object name1) {
     return Intl.message(
-      '서비스 제공 시간은 $name1시까지입니다.\n향후 늘리도록 하겠습니다.',
+      '현재 가게 게시시간은 $name1시까지입니다.\n향후 늘리도록 하겠습니다.',
       name: 'homeServiceEndTimeWarning',
       desc: '',
       args: [name1],

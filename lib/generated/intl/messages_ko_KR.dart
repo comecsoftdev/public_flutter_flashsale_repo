@@ -23,10 +23,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m1(name) => "OK를 누리시고 - 권한 - ${name} - 허용을 선택하시면 됩니다.";
 
-  static String m2(name1) => "서비스 제공 시간은 ${name1}시까지입니다.\n향후 늘리도록 하겠습니다.";
+  static String m2(name1) => "현재 가게 게시시간은 ${name1}시까지입니다.\n향후 늘리도록 하겠습니다.";
 
   static String m3(name1, name2) =>
-      "서비스 제공 시간은\n${name1}시부터 ${name2}시까지입니다.\n향후 늘리도록 하겠습니다.";
+      "현재 가게 게시시간은\n${name1}시부터 ${name2}시까지입니다.\n향후 늘리도록 하겠습니다.";
 
   static String m4(name) => "게시 시간은 최소 ${name}분 이상입니다";
 
