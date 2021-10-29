@@ -359,7 +359,7 @@ extension FSStoreMgmtPageUIFunctions on FSStoreMgmtPageState {
                       children:[
                         Text(
                           (_post != null) ?
-                          _store!.products!.map((e) => e.active == true).toList().length.toString() : '0',
+                          _store!.products!.where((e) => e.active == true).toList().length.toString() : '0',
                           textAlign: TextAlign.right,
                           style: TextStyle(
                             color: AppColor.color1019,
