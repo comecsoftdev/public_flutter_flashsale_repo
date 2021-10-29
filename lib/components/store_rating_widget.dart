@@ -65,6 +65,7 @@ class StoreRatingWidgetState extends State<StoreRatingWidget> {
                   color: Colors.amber,
                 ),
                 updateOnDrag: false,
+                ignoreGestures: true,
                 onRatingUpdate: (rating){},
               ),
               Text(

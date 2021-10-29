@@ -258,6 +258,7 @@ class ReviewItemWidget extends StatelessWidget {
         color: Colors.amber,
       ),
       updateOnDrag: false,
+      ignoreGestures: true,
       onRatingUpdate: (rating){},
     );
   }
