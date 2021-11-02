@@ -155,7 +155,12 @@ class FsHomeBloc extends Bloc<FSHomeEvent, FSHomeState>{
       if(event is FSHomeGetMyNotices) return FSHomeGetMyNoticesFailure(comment: '');
     }
 
+    // HTTP_401_UNAUTHORIZED
     if(response!.statusCode == 401) return FSHomeRefreshTokenRequired(eventToResend: event);
+
+    // HTTP_503_SERVICE_UNAVAILABLE
+    if(response.statusCode == 503)
+      return FSHomeServiceUnavailable(comment: '${response.msg}');
 
     if(response.statusCode != 200){
       if(event is FSHomeGetInitUserData) return FSHomeGetInitUserDataFailure(comment: 'error_code : ${response.statusCode} ${response.msg}');

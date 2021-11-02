@@ -131,6 +131,7 @@
   "homeDirectLocationSelection": "직접 위치 선택",
   "homeNoLocationAvailable": "선택이 가능한 위치가 없습니다",
   "homeHelpDirectLocationSelection": "1. 원하시는 위치를 직접 선택하시면 됩니다\n2. 현재는 일부 지역만 서비스가 지원됩니다\n3. 서비스가 지원되는 지역은 차츰 확대할 예정입니다",
+  "homeServiceCheckInProgress": "서비스 점검 중",
 
   "postListStoreList": "가게 목록",
   "postListSearchStore": "가게 검색",

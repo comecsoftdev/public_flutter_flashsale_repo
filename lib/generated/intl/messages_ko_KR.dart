@@ -188,6 +188,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("현재 위치를 찾고 초기 데이터를 가지고 옵니다."),
         "homeSelectLocation":
             MessageLookupByLibrary.simpleMessage("위치를 선택해주세요"),
+        "homeServiceCheckInProgress":
+            MessageLookupByLibrary.simpleMessage("서비스 점검 중"),
         "homeServiceEndTimeWarning": m2,
         "homeServiceTime": MessageLookupByLibrary.simpleMessage("서비스 시간"),
         "homeServiceTimeWarning": m3,

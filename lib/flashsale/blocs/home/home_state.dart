@@ -249,3 +249,17 @@ class FSHomeGetMyNoticesFailure extends FSHomeState {
   @override
   String toString() => 'FSHomeGetMyNoticesFailure';
 }
+
+class FSHomeServiceUnavailable extends FSHomeState {
+  final String comment;
+
+  FSHomeServiceUnavailable({
+    required this.comment,
+  }) : super();
+
+  @override
+  List<Object> get props => [comment];
+
+  @override
+  String toString() => 'FSHomeServiceUnavailable';
+}

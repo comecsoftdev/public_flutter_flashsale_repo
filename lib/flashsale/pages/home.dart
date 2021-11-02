@@ -362,6 +362,17 @@ class FSHomePageState extends State<FSHomePage> with WidgetsBindingObserver{
                   Navigator.pop(context);
                 },
               );
+            }else if(state is FSHomeServiceUnavailable){
+              logger.d('${this.runtimeType} FSHomeServiceUnavailable');
+
+              // stop periodicUpdate & positionUpdate
+              _stopMapRelatedStreaming();
+              showAlertDialog(context,
+                _s!.homeServiceCheckInProgress,
+                state.comment,
+                yes: _s!.commonOK,
+                yesOnPressed: () => closeApp(),
+              );
             }
           },
           child: WillPopScope(

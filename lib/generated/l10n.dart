@@ -1350,6 +1350,16 @@ class S {
     );
   }
 
+  /// `서비스 점검 중`
+  String get homeServiceCheckInProgress {
+    return Intl.message(
+      '서비스 점검 중',
+      name: 'homeServiceCheckInProgress',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `가게 목록`
   String get postListStoreList {
     return Intl.message(

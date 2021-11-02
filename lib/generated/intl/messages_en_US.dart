@@ -214,6 +214,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Searching current location and get initial data"),
         "homeSelectLocation":
             MessageLookupByLibrary.simpleMessage("Please select a location"),
+        "homeServiceCheckInProgress":
+            MessageLookupByLibrary.simpleMessage("Service check in progress"),
         "homeServiceEndTimeWarning": m2,
         "homeServiceTime": MessageLookupByLibrary.simpleMessage("Service Time"),
         "homeServiceTimeWarning": m3,

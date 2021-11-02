@@ -131,6 +131,7 @@
   "homeDirectLocationSelection": "direct location selection",
   "homeNoLocationAvailable": "There are no locations available for selection",
   "homeHelpDirectLocationSelection": "1. You can directly select the desired location\n2. Currently, the service is only supported in some regions.\n3. Areas where the service is supported will be gradually expanded",
+  "homeServiceCheckInProgress": "Service check in progress",
 
   "postListStoreList": "Store List",
   "postListSearchStore": "Search Store",
