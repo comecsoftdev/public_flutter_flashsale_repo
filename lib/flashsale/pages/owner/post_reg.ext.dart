@@ -70,7 +70,8 @@ extension FSPostRegPageUIFunctions on FSPostRegPageState {
           // [ discount time ]
           PostDiscountTimeWidget(
             key: _discountTimeKey,
-            maxPostEndTime: _maxPostEndTime!,
+            postStartTime: _postStartTime!,
+            postEndTime: _postEndTime!,
           ),
           SizedBox(height: 20.h,),
           FSDivider(height: 8.h, color: AppColor.color1018),
@@ -179,7 +180,8 @@ extension FSPostRegPagePrivatePublicFunctions on FSPostRegPageState {
     _s = S.of(context);
 
     _fSettings = FSAppState.of(context).fSettings!;
-    _maxPostEndTime = (_store.level! >= 3) ? _fSettings.l3ETime : _fSettings.l2ETime;
+    _postStartTime = (_store.level! >= 3) ? _fSettings.l3STime : _fSettings.l2STime;
+    _postEndTime = (_store.level! >= 3) ? _fSettings.l3ETime : _fSettings.l2ETime;
 
     if (_postingLocationTypes.length == 0){
       // currently only postRegPostStoreAddr supported

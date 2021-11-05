@@ -55,7 +55,8 @@ class FSPostRegPageState extends State<FSPostRegPage> {
 
   S? _s;                     //application localization
 
-  int? _maxPostEndTime;
+  int? _postStartTime;
+  int? _postEndTime;
 
   @override
   void initState() {

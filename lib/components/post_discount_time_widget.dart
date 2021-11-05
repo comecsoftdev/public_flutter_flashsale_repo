@@ -14,11 +14,13 @@ import 'package:comecsoft/common/colors.dart' as AppColor;
 
 
 class PostDiscountTimeWidget extends StatefulWidget {
-  final int maxPostEndTime;
+  final int postEndTime;
+  final int postStartTime;
 
   PostDiscountTimeWidget({
     Key? key,
-    this.maxPostEndTime = 21,
+    this.postStartTime = 10,
+    this.postEndTime = 21,
   }) : super(key: key);
 
   @override
@@ -63,7 +65,7 @@ class PostDiscountTimeWidgetState extends State<PostDiscountTimeWidget> {
               Spacer(),
               // [ time setting ]
               InkWell(
-                onTap: () => _checkPostingTime(widget.maxPostEndTime),
+                onTap: () => _checkPostingTime(widget.postStartTime, widget.postEndTime),
                 child: Container(
                   alignment: Alignment.center,
                   width: 73.w,
@@ -190,23 +192,26 @@ class PostDiscountTimeWidgetState extends State<PostDiscountTimeWidget> {
     );
   }
 
-  void _checkPostingTime(sTime) async{
+  void _checkPostingTime(sTime, eTime) async{
     int maxPostingTime = constants.MAX_POSTING_TIME;
     DateTime now = DateTime.now();
 
-    DateTime svcEndTime =  DateTime(now.year, now.month, now.day, sTime);
-    int end;
+    DateTime svcStartTime =  DateTime(now.year, now.month, now.day, sTime);
+    DateTime svcEndTime =  DateTime(now.year, now.month, now.day, eTime);
+    int end = 0;
 
     // calculate valid posting time with remaining posting time and service end time
-    for(end = 0; end < maxPostingTime; end += 10){
-      if (now.add(Duration(minutes: end)).isAfter(svcEndTime)){
-        break;
+    if (now.isAfter(svcStartTime) && now.isBefore(svcEndTime)){
+      for(end = 0; end < maxPostingTime; end += 10){
+        if (now.add(Duration(minutes: end)).isAfter(svcEndTime)){
+          break;
+        }
       }
     }
 
     if (end < 20){
       showAlertDialog(context,
-        _s!.homeServiceEndTimeWarning(sTime),
+        _s!.homeServiceTimeWarning(sTime, eTime),
         null,
         yes: _s!.commonOK,
         yesOnPressed: () => Navigator.pop(context),
