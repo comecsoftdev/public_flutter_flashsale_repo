@@ -212,7 +212,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "introMeetStore": MessageLookupByLibrary.simpleMessage(
             "현재 내 주변에서 할인을 진행하고 있는\n가게들을 만나보세요."),
         "introNearMe": MessageLookupByLibrary.simpleMessage("내 근처"),
-        "introNearbyCustomer": MessageLookupByLibrary.simpleMessage("주변 고개"),
+        "introNearbyCustomer": MessageLookupByLibrary.simpleMessage("주변 고객"),
         "introNotifyDiscount": MessageLookupByLibrary.simpleMessage(
             "근처에 있는 고객에게\n가게의 할인 소식을 알려보세요."),
         "introPromote": MessageLookupByLibrary.simpleMessage("내 가게 홍보하기"),

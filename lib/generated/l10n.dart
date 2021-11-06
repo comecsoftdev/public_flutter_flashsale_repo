@@ -4120,10 +4120,10 @@ class S {
     );
   }
 
-  /// `주변 고개`
+  /// `주변 고객`
   String get introNearbyCustomer {
     return Intl.message(
-      '주변 고개',
+      '주변 고객',
       name: 'introNearbyCustomer',
       desc: '',
       args: [],
