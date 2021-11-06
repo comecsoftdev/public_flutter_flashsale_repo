@@ -372,6 +372,7 @@ class FSHomePageState extends State<FSHomePage> with WidgetsBindingObserver{
                 state.comment,
                 yes: _s!.commonOK,
                 yesOnPressed: () => closeApp(),
+                willPopupActive: true,
               );
             }
           },
