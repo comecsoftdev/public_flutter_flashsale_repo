@@ -353,7 +353,7 @@ extension FSHomePageInitDataFunctions on FSHomePageState {
 
     if (now.isAfter(svcEndTime) || now.isBefore(svcStartTime)){
       showAlertDialog(context,
-        _s!.homeServiceTime,
+        _s!.postRegPostingTime,
         _s!.homeServiceTimeWarning(state.fSettings.l3STime, state.fSettings.l3ETime),
         yes: _s!.commonOK,
         yesOnPressed: () => Navigator.pop(context),
