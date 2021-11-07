@@ -1250,10 +1250,10 @@ class S {
     );
   }
 
-  /// `새로운 버전이 있습니다\n업데이트가 필요합니다.`
+  /// `주요 개선 사항이 있습니다\n최신 버젼으로 업데이트가 필요합니다.`
   String get homeUpdateRequired {
     return Intl.message(
-      '새로운 버전이 있습니다\n업데이트가 필요합니다.',
+      '주요 개선 사항이 있습니다\n최신 버젼으로 업데이트가 필요합니다.',
       name: 'homeUpdateRequired',
       desc: '',
       args: [],

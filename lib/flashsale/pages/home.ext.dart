@@ -378,8 +378,9 @@ extension FSHomePageInitDataFunctions on FSHomePageState {
         yesOnPressed: (){
           // goto app store
           goToAppStore(getPackageInfo(context).packageName);
-          Navigator.pop(context);
         },
+        no: _s!.commonCancel,
+        noOnPressed: () => closeApp(),
         willPopupActive: true,
       );
     }else if(latestVersion.patch > currentVersion.patch){

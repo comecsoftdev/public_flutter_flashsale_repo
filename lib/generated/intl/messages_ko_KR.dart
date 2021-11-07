@@ -195,8 +195,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "homeServiceTimeWarning": m3,
         "homeSetCurrentLocation":
             MessageLookupByLibrary.simpleMessage("현재 위치로 설정"),
-        "homeUpdateRequired":
-            MessageLookupByLibrary.simpleMessage("새로운 버전이 있습니다\n업데이트가 필요합니다."),
+        "homeUpdateRequired": MessageLookupByLibrary.simpleMessage(
+            "주요 개선 사항이 있습니다\n최신 버젼으로 업데이트가 필요합니다."),
         "homeWantToUpdate":
             MessageLookupByLibrary.simpleMessage("새로운 버전이 있습니다\n업데이트 하시겠습니까?"),
         "introDiscountStore": MessageLookupByLibrary.simpleMessage("할인중인 가게"),

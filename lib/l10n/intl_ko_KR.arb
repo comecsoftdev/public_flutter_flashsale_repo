@@ -121,7 +121,7 @@
   "homeNoPostingStore": "게시하고 있는 가게 없음.",
   "homeCurrentLocationUnknown": "현재 위치를 알수가 없습니다.",
   "homeWantToUpdate": "새로운 버전이 있습니다\n업데이트 하시겠습니까?",
-  "homeUpdateRequired": "새로운 버전이 있습니다\n업데이트가 필요합니다.",
+  "homeUpdateRequired": "주요 개선 사항이 있습니다\n최신 버젼으로 업데이트가 필요합니다.",
   "homeServiceTimeWarning": "현재 가게 게시시간은\n{name1}시부터 {name2}시까지입니다.\n향후 늘리도록 하겠습니다.",
   "homeServiceEndTimeWarning": "현재 가게 게시시간은 {name1}시까지입니다.\n향후 늘리도록 하겠습니다.",
   "homeServiceTime": "서비스 시간",
