@@ -48,7 +48,7 @@ class _SplashPageState extends State<SplashPage> {
         child: ProgressHUD(
           key: _progressHUDKey,
           child: Container(
-            height: double.infinity,
+            height: 1.sh,
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage("assets/images/splash.png"),
