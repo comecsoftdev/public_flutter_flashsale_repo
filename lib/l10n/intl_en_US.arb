@@ -93,6 +93,7 @@
   "loginFailedAndTryAgain": "Login Failed And Try Again",
   "loginSessionExpired": "Login Session Expired",
   "loginTryAgain": "Login Again",
+  "loginAgreeOver14Years": "I am over 14 years old (required)",
   "loginAgreeTermsAndCondition": "Agree to terms and conditions (required)",
   "loginAgreePrivacyPolicy": "Agree to the privacy policy (required)",
   "loginAgreeLocationBased": "Location-based service terms and conditions (required)",

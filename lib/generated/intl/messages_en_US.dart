@@ -257,6 +257,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "You can easily find the information you want\nand visit the store right away."),
         "loginAgreeLocationBased": MessageLookupByLibrary.simpleMessage(
             "Location-based service terms and conditions (required)"),
+        "loginAgreeOver14Years": MessageLookupByLibrary.simpleMessage(
+            "I am over 14 years old (required)"),
         "loginAgreePrivacyPolicy": MessageLookupByLibrary.simpleMessage(
             "Agree to the privacy policy (required)"),
         "loginAgreeTermPrivacy": MessageLookupByLibrary.simpleMessage(

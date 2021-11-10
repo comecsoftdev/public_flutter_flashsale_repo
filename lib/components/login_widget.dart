@@ -73,6 +73,7 @@ class LoginWidget extends StatefulWidget {
 
 class LoginWidgetState extends State<LoginWidget> {
   S? _s;
+  GlobalKey<LoginAgreeWidgetState> _over14yearsKey = new GlobalKey();
   GlobalKey<LoginAgreeWidgetState> _termsAndConditionKey = new GlobalKey();
   GlobalKey<LoginAgreeWidgetState> _privacyPolicyKey = new GlobalKey();
   GlobalKey<LoginAgreeWidgetState> _locationBasedTermsKey = new GlobalKey();
@@ -117,6 +118,17 @@ class LoginWidgetState extends State<LoginWidget> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                LoginAgreeWidget(
+                  key: _over14yearsKey,
+                  checkBoxActiveColor: AppColor.color1011,
+                  label: _s!.loginAgreeOver14Years,
+                  fontColor: AppColor.color1012,
+                  fontSize: 14.sp,
+                  bold: true,
+                  onTap: null,
+                  value: widget.agreedTermPrivacy,
+                ),
+                SizedBox(height: 0.h),
                 LoginAgreeWidget(
                   key: _termsAndConditionKey,
                   checkBoxActiveColor: AppColor.color1011,
@@ -181,7 +193,7 @@ class LoginWidgetState extends State<LoginWidget> {
 
     // if termsAndCondition isn't checked or privacyPolicy isn't checked
     if (!_termsAndConditionKey.currentState!.getCheckBoxValue() || !_privacyPolicyKey.currentState!.getCheckBoxValue()
-        || !_locationBasedTermsKey.currentState!.getCheckBoxValue()){
+        || !_locationBasedTermsKey.currentState!.getCheckBoxValue() || !_over14yearsKey.currentState!.getCheckBoxValue()){
       showAlertDialog(context,
         _s!.loginAgreeTermPrivacy,
         null,

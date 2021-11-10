@@ -93,10 +93,11 @@
   "loginFailedAndTryAgain": "로그인에 실패했습니다. 다시 한번 시도해주세요.",
   "loginSessionExpired": "로그인 세션 만료",
   "loginTryAgain": "다시 로그인 합니다.",
+  "loginAgreeOver14Years": "만 14세 이상입니다(필수)",
   "loginAgreeTermsAndCondition": "이용약관동의(필수)",
   "loginAgreePrivacyPolicy": "개인정보처리방침 동의(필수)",
   "loginAgreeLocationBased": "위치기반서비스이용약관 동의(필수)",
-  "loginAgreeTermPrivacy": "이용 약관과 개인정보처리방침에 동의해주세요",
+  "loginAgreeTermPrivacy": "아래의 필수 항목에\n동의해주세요",
   "loginTermsService": "이용약관",
   "loginPrivacyPolicy": "개인정보처리방침",
 

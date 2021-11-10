@@ -226,10 +226,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "손 쉽게 원하는 정보를 찾고\n바로 가게를 방문해보세요."),
         "loginAgreeLocationBased":
             MessageLookupByLibrary.simpleMessage("위치기반서비스이용약관 동의(필수)"),
+        "loginAgreeOver14Years":
+            MessageLookupByLibrary.simpleMessage("만 14세 이상입니다(필수)"),
         "loginAgreePrivacyPolicy":
             MessageLookupByLibrary.simpleMessage("개인정보처리방침 동의(필수)"),
         "loginAgreeTermPrivacy":
-            MessageLookupByLibrary.simpleMessage("이용 약관과 개인정보처리방침에 동의해주세요"),
+            MessageLookupByLibrary.simpleMessage("아래의 필수 항목에\n동의해주세요"),
         "loginAgreeTermsAndCondition":
             MessageLookupByLibrary.simpleMessage("이용약관동의(필수)"),
         "loginAppServerAuthError":

@@ -73,11 +73,11 @@ class LoginAgreeWidgetState extends State<LoginAgreeWidget> {
               ],
             ),
             Spacer(),
-            Icon(
+            (widget.onTap != null) ? Icon(
               Icons.arrow_forward_ios_outlined,
               color: AppColor.color303,
               size: 15.r,
-            ),
+            ) : Container(),
           ],
         ),
       ),

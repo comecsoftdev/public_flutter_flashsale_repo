@@ -62,29 +62,27 @@ class SSOSignInPageState extends State<SSOSignInPage> {
             borderColor: AppColor.color90,
             textStyle: TextStyle(color: AppColor.color101, fontSize: 14.0),
             indicatorColor: AppColor.color502,
-            child: SingleChildScrollView(
-              child: Container(
-                //height: double.infinity,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/images/signin.png"),
-                        fit: BoxFit.cover
-                    )
-                ),
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(height: 490.h,),
-                    Center(
-                      child: Container(
-                        color: AppColor.color90,
-                        child: LoginWidget(
-                          onLogIn: _onLogIn,
-                          agreedTermPrivacy: AppState.of(context).agreedTermPrivacy,
-                        ),
+            child: Container(
+              //height: double.infinity,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/images/signin.png"),
+                      fit: BoxFit.cover
+                  )
+              ),
+              child: Column(
+                children: <Widget>[
+                  SizedBox(height: 430.h,),
+                  Center(
+                    child: Container(
+                      color: AppColor.color90,
+                      child: LoginWidget(
+                        onLogIn: _onLogIn,
+                        agreedTermPrivacy: AppState.of(context).agreedTermPrivacy,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
