@@ -480,8 +480,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("해당 리뷰를 신고하시겠습니까?"),
         "storeDeactivatedReview":
             MessageLookupByLibrary.simpleMessage("리뷰/평점 비활성화"),
-        "storeDeactivatedReviewByManager": MessageLookupByLibrary.simpleMessage(
-            "가게 관리자의 요청으로 리뷰/평점이\n비활성화된 상태입니다"),
+        "storeDeactivatedReviewByManager":
+            MessageLookupByLibrary.simpleMessage("리뷰/평점이 비활성화된 상태입니다"),
         "storeDiscountProduct": MessageLookupByLibrary.simpleMessage("할인 상품"),
         "storeFullRating": MessageLookupByLibrary.simpleMessage("전체 평가"),
         "storeFullReview": MessageLookupByLibrary.simpleMessage("전체 리뷰"),

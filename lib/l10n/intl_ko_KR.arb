@@ -201,7 +201,7 @@
   "storeNoAnsweredReview": "미답변 리뷰가 없습니다",
   "storeReportReview": "리뷰 신고",
   "storeAskReportReview": "해당 리뷰를 신고하시겠습니까?",
-  "storeDeactivatedReviewByManager": "가게 관리자의 요청으로 리뷰/평점이\n비활성화된 상태입니다",
+  "storeDeactivatedReviewByManager": "리뷰/평점이 비활성화된 상태입니다",
   "storeDeactivatedReview": "리뷰/평점 비활성화",
   "storeReportTotalReport": "총 {name}건의 신고가 접수되었습니다",
 

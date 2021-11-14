@@ -546,7 +546,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "storeDeactivatedReview":
             MessageLookupByLibrary.simpleMessage("Deactivated reviews"),
         "storeDeactivatedReviewByManager": MessageLookupByLibrary.simpleMessage(
-            "Reviews/Ratings is inactivated\nat the request of the store manager"),
+            "Reviews/Ratings are disabled"),
         "storeDiscountProduct":
             MessageLookupByLibrary.simpleMessage("Discount Product"),
         "storeFullRating": MessageLookupByLibrary.simpleMessage("Full Rating"),

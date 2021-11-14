@@ -2010,10 +2010,10 @@ class S {
     );
   }
 
-  /// `가게 관리자의 요청으로 리뷰/평점이\n비활성화된 상태입니다`
+  /// `리뷰/평점이 비활성화된 상태입니다`
   String get storeDeactivatedReviewByManager {
     return Intl.message(
-      '가게 관리자의 요청으로 리뷰/평점이\n비활성화된 상태입니다',
+      '리뷰/평점이 비활성화된 상태입니다',
       name: 'storeDeactivatedReviewByManager',
       desc: '',
       args: [],

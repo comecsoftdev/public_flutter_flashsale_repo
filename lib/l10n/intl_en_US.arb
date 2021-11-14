@@ -201,7 +201,7 @@
   "storeNoAnsweredReview": "There are no unanswered reviews",
   "storeReportReview": "Review Report",
   "storeAskReportReview": "Are you sure you want to report this review?",
-  "storeDeactivatedReviewByManager": "Reviews/Ratings is inactivated\nat the request of the store manager",
+  "storeDeactivatedReviewByManager": "Reviews/Ratings are disabled",
   "storeDeactivatedReview": "Deactivated reviews",
   "storeReportTotalReport": "A total of {name} reports were received",
 
