@@ -183,7 +183,7 @@ extension FSReportPageUIFunctions on FSReportPageState {
           child: LinearPercentIndicator(
             alignment: MainAxisAlignment.center,
             lineHeight: 16.h,
-            percent: ratio[key],
+            percent: ratio[key].toDouble(),
             linearStrokeCap: LinearStrokeCap.roundAll,
             backgroundColor: AppColor.color1014,
             progressColor: AppColor.color1011,
