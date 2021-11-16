@@ -274,6 +274,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginFailedAndTryAgain":
             MessageLookupByLibrary.simpleMessage("Login Failed And Try Again"),
         "loginGoogle": MessageLookupByLibrary.simpleMessage("Google"),
+        "loginLocationBased": MessageLookupByLibrary.simpleMessage(
+            "Location-based service terms"),
         "loginPrivacyPolicy":
             MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "loginSessionExpired":

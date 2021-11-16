@@ -1050,6 +1050,16 @@ class S {
     );
   }
 
+  /// `위치기반서비스 이용약관`
+  String get loginLocationBased {
+    return Intl.message(
+      '위치기반서비스 이용약관',
+      name: 'loginLocationBased',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `현재 위치를 찾고 초기 데이터를 가지고 옵니다.`
   String get homeSearchingLocationNData {
     return Intl.message(

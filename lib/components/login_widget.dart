@@ -182,7 +182,7 @@ class LoginWidgetState extends State<LoginWidget> {
       Navigator.of(context).pushNamed('fswebview', arguments: arguments);
     }else if(label == _s!.loginAgreeLocationBased){
       Map<String, dynamic> arguments = {
-        'title': _s!.loginPrivacyPolicy, 'initialHost': env['LOCATION_BASE_TERM_SERVICE']!, 'initialPath': '', 'type': WebViewType.WebViewNormal
+        'title': _s!.loginLocationBased, 'initialHost': env['LOCATION_BASE_TERM_SERVICE']!, 'initialPath': '', 'type': WebViewType.WebViewNormal
       };
       Navigator.of(context).pushNamed('fswebview', arguments: arguments);
     }

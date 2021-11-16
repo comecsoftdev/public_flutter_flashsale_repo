@@ -242,6 +242,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginFailedAndTryAgain":
             MessageLookupByLibrary.simpleMessage("로그인에 실패했습니다. 다시 한번 시도해주세요."),
         "loginGoogle": MessageLookupByLibrary.simpleMessage("구글"),
+        "loginLocationBased":
+            MessageLookupByLibrary.simpleMessage("위치기반서비스 이용약관"),
         "loginPrivacyPolicy": MessageLookupByLibrary.simpleMessage("개인정보처리방침"),
         "loginSessionExpired":
             MessageLookupByLibrary.simpleMessage("로그인 세션 만료"),

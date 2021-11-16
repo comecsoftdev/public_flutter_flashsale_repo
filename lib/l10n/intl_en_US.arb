@@ -100,6 +100,7 @@
   "loginAgreeTermPrivacy": "Please agree to the terms of use and privacy policy",
   "loginTermsService": "Terms of service",
   "loginPrivacyPolicy": "Privacy Policy",
+  "loginLocationBased": "Location-based service terms",
 
   "homeSearchingLocationNData": "Searching current location and get initial data",
   "homeDrawerRegStore": "Register Store",

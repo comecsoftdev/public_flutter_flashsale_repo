@@ -100,6 +100,7 @@
   "loginAgreeTermPrivacy": "아래의 필수 항목에\n동의해주세요",
   "loginTermsService": "이용약관",
   "loginPrivacyPolicy": "개인정보처리방침",
+  "loginLocationBased": "위치기반서비스 이용약관",
 
   "homeSearchingLocationNData": "현재 위치를 찾고 초기 데이터를 가지고 옵니다.",
   "homeDrawerRegStore": "나의 가게 등록",
