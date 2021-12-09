@@ -7,7 +7,6 @@ import 'package:comecsoft/flashsale/app_state_fs.dart';
 import 'package:comecsoft/flashsale/blocs/blocs.dart';
 import 'package:comecsoft/flashsale/models/models.dart';
 import 'package:comecsoft/utils/utils.dart';
-import 'package:settings_ui/settings_ui.dart';
 import 'package:sprintf/sprintf.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
