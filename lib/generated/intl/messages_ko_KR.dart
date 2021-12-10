@@ -8,7 +8,6 @@
 // ignore_for_file:prefer_single_quotes,comment_references, directives_ordering
 // ignore_for_file:annotate_overrides,prefer_generic_function_type_aliases
 // ignore_for_file:unused_import, file_names, avoid_escaping_inner_quotes
-// ignore_for_file:unnecessary_string_interpolations, unnecessary_string_escapes
 
 import 'package:intl/intl.dart';
 import 'package:intl/message_lookup_by_library.dart';
@@ -599,7 +598,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "storeRegNotSupportedArea":
             MessageLookupByLibrary.simpleMessage("가게 위치가 현재 지원되지 않는 지역입니다"),
         "storeRegNotSupportedAreaDesc": MessageLookupByLibrary.simpleMessage(
-            "지원되는 지역은 지도화면-좌측상단(현재위치 혹은 지역명)-직접위치선택하시면 보실수 있습니다\n지원지역은 추후에 추가될 예정입니다."),
+            "지원되는 지역은 메뉴-도움말-서비스지역에서 확인할 수 있습니다.\n지원지역은 추후에 추가될 예정입니다."),
         "storeRegNotVerifiedNumber":
             MessageLookupByLibrary.simpleMessage("인증받은 전화번호가 아닙니다"),
         "storeRegPhoneNumber": MessageLookupByLibrary.simpleMessage("전화번호"),
