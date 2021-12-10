@@ -175,7 +175,10 @@ extension FSSettingsPageUIFunctions on FSSettingsPageState {
               },
             ),
           ),
-          FSDivider(),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: FSDivider(),
+          ),
           // [ Location-based service terms and conditions ]
           Container(
             child: _buildSubMenu(

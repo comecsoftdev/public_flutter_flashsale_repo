@@ -169,6 +169,12 @@ final whattobuyPagesRouteFactories = {
     ),
     settings: route,
   ),
+  "fshelp": (route) => MaterialPageRoute(
+    builder: (context) => Center(
+      child: FSHelpPage(),
+    ),
+    settings: route,
+  ),
   "fssample": (route) => MaterialPageRoute(
     builder: (context) => Center(
       child: FsSamplePage(),

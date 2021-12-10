@@ -15,6 +15,7 @@ export 'review_reg.dart';
 export 'web_view.dart';
 export 'notice.dart';
 export 'image_viewer.dart';
+export 'help.dart';
 export 'owner/phone_vrf.dart';
 export 'owner/product_mgmt.dart';
 export 'owner/review_mgmt.dart';

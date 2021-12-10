@@ -127,9 +127,9 @@ class FSHomePageState extends State<FSHomePage> with WidgetsBindingObserver{
         //MenuItem(_s!.storeMyReview, null, true, false, null),
         MenuItem(_s!.homeDrawerNotice, null, true, false, null),
         MenuItem(_s!.homeDrawerSettings, null, true, false, null),
-        //MenuItem(_s!.homeDrawerHelp, null, true, false, null),
         MenuItem(_s!.homeDrawerWatchAD, null, (FirebaseAdMobManager.rewardedVideoAdLoaded) ? true : false, true, _s!.homeDrawerADComment),
         MenuItem(_s!.homeDrawerRegStore, null, false, false, null),
+        MenuItem(_s!.homeDrawerHelp, null, true, false, null),
       ];
 
     super.didChangeDependencies();

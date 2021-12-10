@@ -717,6 +717,8 @@ extension FSHomePageCBFunctions on FSHomePageState {
       Navigator.of(context).popAndPushNamed('fsstorereg', arguments: arguments);
     }else if (title == S.of(context).storeMyReview){
       // Navigator.of(context).popAndPushNamed('fsmanagerintro');
+    }else if(title == S.of(context).homeDrawerHelp){
+      Navigator.of(context).popAndPushNamed('fshelp', );
     }
   }
 
