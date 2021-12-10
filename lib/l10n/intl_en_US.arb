@@ -434,6 +434,17 @@
   "introEncourageCustomers": "Encourage customers to visit\nwith attractive benefits.",
   "introDuringBusiness": "You can upload information quickly and easily\neven during business hours.",
 
+  "helpGeneralUser": "General User",
+  "helpGeneralUserStart": "Install and Get started",
+  "helpGeneralUserFind": "Find Deals",
+  "helpStoreManager": "Store Manager",
+  "helpStoreManagerStore": "Store Registration",
+  "helpStoreManagerProduct": "Product Registration",
+  "helpStoreManagerPost": "Posting Product",
+  "helpStoreManagerReview": "Review Management",
+  "helpService": "Service",
+  "helpServiceServiceArea": "Service Area",
+
   "searchEnterDifferentKeyword": "Enter two or more characters\nor try a search with a different keyword",
   "searchEnterSearchWord": "Please enter your search word"
 }

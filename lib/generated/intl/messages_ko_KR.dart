@@ -8,6 +8,7 @@
 // ignore_for_file:prefer_single_quotes,comment_references, directives_ordering
 // ignore_for_file:annotate_overrides,prefer_generic_function_type_aliases
 // ignore_for_file:unused_import, file_names, avoid_escaping_inner_quotes
+// ignore_for_file:unnecessary_string_interpolations, unnecessary_string_escapes
 
 import 'package:intl/intl.dart';
 import 'package:intl/message_lookup_by_library.dart';
@@ -148,6 +149,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "commonWriteReply": MessageLookupByLibrary.simpleMessage("답변을 작성해주세요"),
         "commonWriteReply2": MessageLookupByLibrary.simpleMessage("답변 작성"),
         "commonWriteReview": MessageLookupByLibrary.simpleMessage("리뷰 작성"),
+        "helpGeneralUser": MessageLookupByLibrary.simpleMessage("일반사용자"),
+        "helpGeneralUserFind":
+            MessageLookupByLibrary.simpleMessage("할인 상품 찾아보기"),
+        "helpGeneralUserStart":
+            MessageLookupByLibrary.simpleMessage("설치 및 시작하기"),
+        "helpService": MessageLookupByLibrary.simpleMessage("서비스"),
+        "helpServiceServiceArea":
+            MessageLookupByLibrary.simpleMessage("서비스 지역"),
+        "helpStoreManager": MessageLookupByLibrary.simpleMessage("가게관리자"),
+        "helpStoreManagerPost": MessageLookupByLibrary.simpleMessage("상품 게시"),
+        "helpStoreManagerProduct":
+            MessageLookupByLibrary.simpleMessage("상품 등록"),
+        "helpStoreManagerReview": MessageLookupByLibrary.simpleMessage("리뷰 관리"),
+        "helpStoreManagerStore": MessageLookupByLibrary.simpleMessage("가게 등록"),
         "homeCheckCurrentLocation":
             MessageLookupByLibrary.simpleMessage("현재 위치를 확인중입니다."),
         "homeCurrentLocationUnknown":

@@ -4230,6 +4230,106 @@ class S {
     );
   }
 
+  /// `일반사용자`
+  String get helpGeneralUser {
+    return Intl.message(
+      '일반사용자',
+      name: 'helpGeneralUser',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `설치 및 시작하기`
+  String get helpGeneralUserStart {
+    return Intl.message(
+      '설치 및 시작하기',
+      name: 'helpGeneralUserStart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `할인 상품 찾아보기`
+  String get helpGeneralUserFind {
+    return Intl.message(
+      '할인 상품 찾아보기',
+      name: 'helpGeneralUserFind',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `가게관리자`
+  String get helpStoreManager {
+    return Intl.message(
+      '가게관리자',
+      name: 'helpStoreManager',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `가게 등록`
+  String get helpStoreManagerStore {
+    return Intl.message(
+      '가게 등록',
+      name: 'helpStoreManagerStore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `상품 등록`
+  String get helpStoreManagerProduct {
+    return Intl.message(
+      '상품 등록',
+      name: 'helpStoreManagerProduct',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `상품 게시`
+  String get helpStoreManagerPost {
+    return Intl.message(
+      '상품 게시',
+      name: 'helpStoreManagerPost',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `리뷰 관리`
+  String get helpStoreManagerReview {
+    return Intl.message(
+      '리뷰 관리',
+      name: 'helpStoreManagerReview',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `서비스`
+  String get helpService {
+    return Intl.message(
+      '서비스',
+      name: 'helpService',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `서비스 지역`
+  String get helpServiceServiceArea {
+    return Intl.message(
+      '서비스 지역',
+      name: 'helpServiceServiceArea',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `두 글자 이상 입력하거나\n다른 키워드로 검색해 보세요`
   String get searchEnterDifferentKeyword {
     return Intl.message(
