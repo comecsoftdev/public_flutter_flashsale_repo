@@ -68,7 +68,7 @@ class _CustomWebViewWidgetState extends State<CustomWebViewWidget> {
               _loading = false;
             });
           },
-          gestureNavigationEnabled: true,
+          //gestureNavigationEnabled: true,
         ),
         (_loading) ? Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.redAccent),),) : Container(),
       ],
