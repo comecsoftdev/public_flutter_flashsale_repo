@@ -1,180 +1,57 @@
 ﻿# 내 주변의 모~든 할인 가게로
 ![enter image description here](https://www.comecsoft.com/images/graphic_design.png)
 
-## 가게로란?
-**가게로**는 자영업자 사장님들과 소비자들을 연결해주는 서비스입니다.
+## 가게로
+**가게로**는 자영업자 사장님들과 소비자들을 연결하는 앱으로 내 주변의 할인 정보를 제공합니다.
 
-사장님들은 복잡한 이벤트, 어려운 홍보 대행사 절차 없이 클릭 몇 번으로 우리 가게 세일 홍보를 무료로 하실 수 있습니다.
+ 1. 자영업자 사장님들은 수수료 없이 무료로 주변 고객에게 내 가게, 내 상품을 홍보할 수 있습니다.
+ 
+ 2. 소비자들은 근처의 할인 중인 가게를 찾아서 매력적인 가격으로 상품을 구매할 수 있습니다.
 
-사용자들은 내 주변 가게들의 실시간 타임 세일이나 게릴라 이벤트를 확인하시고 할인된 가격으로 상품을 구매할 수 있습니다.
+> 아직 홍보 부족으로 등록된 가게가 많지 않습니다. 열심히 홍보해서 많은 가게들이 등록되도록 하겠습니다.
 
+## 공개된 소스
+공개된 **가게로** 소스는 플러터(flutter)로 작성된 안드로이드 앱 소스입니다.  
+실제 서비스되고 있는 소스이며, 구글 플레이스토어에서 설치해서 이용할 수 있습니다.
 
-## 공개된 소스는
-실제 서비스되고 있는 **가게로**의 프론트엔드 앱 소스입니다.
-플루터로 개발 되어져 있고, 현재는 안드로이드만 지원됩니다. 
-[여기](https://play.google.com/store/apps/details?id=com.comecsoft.flashsale)에서 다운로드 받을 수 있습니다.
-iOS는 향 후 지원할 예정입니다.
+대부분의 소스는 공개되었으나, 아래 내용과 관련된 일부 소스들은 공개하지 않았습니다.
+ (공개되지 않은 파일들은 아래 디렉토리 구조 참조)
+
+ 1. 서비스 키(Key)값을 포함하고 있는 환경변수(kakao, google, facebook등의 서비스 키값들)
+ 2. 앱의 주요 정보를 포함하고 있는 파일(인증서, 앱 id 등)
+ 3. 앱에 사용되는 이미지파일들
+
+ ```bash
+├── .private
+│   ├── debug
+│	│	└── .env
+│   └── prod
+│		└── .env
+├── android
+│   ├── app
+│	│	└── src
+│	│	│	└── main
+│	│	│		└── res
+│	│	│			└── values
+│	│	│				└── strings.xml
+│	│	├── proguard-rules.pro
+│	│	├── google-services.json
+│	│	└── flashsale.keystore
+│   └── key.properties
+└── assets
+	└── images
+``` 
+ 
+ ## 소프트웨어 블로그
+ 가게로 앱에서 사용된 SW의 기술적인 내용들은 네이버 블로그로 정리를 해서 공유할 예정입니다.
+ 하나씩 기술 블로그가 작성되면 공유하도록 하겠습니다.
+ 블로그 위치는 아래 참고사이트의 **가게로 네이버 블로그** 내 '가게로 SW 기술 공유' 카테고리를 참조하세요.
 
 ## 참고사이트
-[가게로 안드로이드 다운로드 사이트](https://play.google.com/store/apps/details?id=com.comecsoft.flashsale)
 [가게로 홈페이지](https://www.comecsoft.com)
+[가게로 구글 앱 스토어](https://play.google.com/store/apps/details?id=com.comecsoft.flashsale)
 [가게로 네이버 블로그](https://blog.naver.com/comecsoftdev)
+[가게로 소비자 홍보 동영상](https://youtu.be/i53kbQxKv7c)
+[가게로 판매자 홍보 동영상](https://youtu.be/7BelvWtrLaU)
 
 
-
-# dfsdto StackEdit!
-
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
-
-
-# Files
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
-
-## Create files and folders
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-
-## Switch to another file
-
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
-
-## Rename a file
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
-
-## Delete a file
-
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
-
-## Export a file
-
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
-
-
-# Synchronization
-
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
-
-There are two types of synchronization and they can complement each other:
-
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
-
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
-
-## Open a file
-
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
-
-## Save a file
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## Synchronize a file
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
-
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-|
-|***
-
-## ~~Blockquote~~
-
-***|  |
-|----------|--|
-|          |  |
-|  |
-|----------|--|
-|          |  |
-
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
-
-
-# Markdown extensions
-
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
-
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
-
-
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
